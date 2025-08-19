@@ -1,10 +1,10 @@
 {
-  "name": "next14-app-router",
+  "name": "next14-app-router-partially-obfuscated",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "next build ",
+    "build": "next build && npm run obfuscate-build",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.7.1",
-    "next": "^14.2.26",
+    "next": "^14.2.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "zod": "^3.22.4"
@@ -28,7 +28,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.54.0",
     "eslint-config-next": "^14.0.4",
-    "next-css-obfuscator": "^3.0.0-beta.5",
+    "next-css-obfuscator": "^2.0.0",
     "postcss": "^8.4.32",
     "postcss-cli": "^11.0.0",
     "prettier": "^3.1.0",
@@ -39,8 +39,8 @@
   "ct3aMetadata": {
     "initVersion": "7.25.1"
   },
-  "packageManager": "npm@10.1.0",
   "engines": {
     "node": ">=22.0.0"
-  }
+  },
+  "packageManager": "npm@10.1.0"
 }

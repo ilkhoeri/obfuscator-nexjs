@@ -1,4 +1,4 @@
-# Next14 App Router Demo
+# Next14 App Router Partially Obfuscated Demo
 
 🛠️ Development Environment
 
